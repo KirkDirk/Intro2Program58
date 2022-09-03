@@ -1,4 +1,4 @@
-﻿// Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
+// Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 // Например, даны 2 матрицы:
 // 2 4 | 3 4
 // 3 2 | 3 3
@@ -24,7 +24,7 @@ void PrintArray2Dim(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            Console.Write($"{array[i, j]}  ");
+            Console.Write("{0,4:N0}", array[i, j]);
         }
         Console.WriteLine();
     }
@@ -54,7 +54,6 @@ else
                 multiplicationMatrix[i, j] += firstMatrix[i, a] * secondMatrix[a, j];
             }
         }
-
     }
     Console.WriteLine("Результат умножения матриц:");
     PrintArray2Dim(multiplicationMatrix);
